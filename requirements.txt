@@ -1,0 +1,9 @@
+numpy
+pandas
+matplotlib
+scikit-learn
+pillow
+opencv-python
+scikit-image
+tqdm
+tensorflow>=2.15,<2.17

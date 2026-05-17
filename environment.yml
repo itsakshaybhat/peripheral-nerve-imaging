@@ -1,0 +1,16 @@
+name: peripheral-nerve-imaging
+channels:
+  - conda-forge
+dependencies:
+  - python=3.10
+  - pip
+  - numpy
+  - pandas
+  - matplotlib
+  - scikit-learn
+  - pillow
+  - opencv
+  - scikit-image
+  - tqdm
+  - pip:
+      - tensorflow>=2.15,<2.17
