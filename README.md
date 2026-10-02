@@ -18,6 +18,22 @@ This project was built and validated on the [Kaggle Ultrasound Nerve Segmentatio
 
 ---
 
+## 📈 Project Results
+
+The model produces classification-gated nerve segmentation masks and predicted bounding boxes from ultrasound scans. The examples below show the qualitative output of the pipeline, including the reported accuracy for each sample.
+
+![TransCGUNet prediction results](Images/ResultsImage.png)
+
+### Inference Workflow
+
+![Inference workflow](Images/FlowChart.png)
+
+### Detailed Output Example
+
+![Detailed segmentation and bounding box output](Images/FinalCalc.png)
+
+---
+
 ## 🏗️ Model Architecture — TransCGUNet
 
 `TransCGUNet` is a unified multi-task architecture that simultaneously performs pixel-level segmentation, image-level presence classification, and region-level bounding box localization.
@@ -83,6 +99,8 @@ peripheral-nerve-imaging/
 ├── full_notebook_export.py         # End-to-end notebook script export for research & experimentation
 ├── environment.yml                 # Conda environment specification file
 ├── requirements.txt                # Pip package requirements file
+├── Images/                         # Project workflow and prediction visualizations
+├── Base Paper/                     # Reference paper used for the project
 ├── models/
 │   └── README.md                   # Instructions for placing 1_unet_ner_seg.hdf5 model checkpoints
 └── README.md                       # Complete project documentation
@@ -207,6 +225,7 @@ When evaluating models, predictions generate 6 qualitative comparison panels:
 
 ## 📚 References
 
+- **Primary Reference Paper**: [Accelerating the Deep Learning based Brachial Plexus Nerve Trunks Recognition in Ultrasound Images using Edge Computing](Base%20Paper/BasePaper.pdf), *2024 16th International Conference on Computer and Automation Engineering (ICCAE)*, pp. 413–417. [DOI: 10.1109/ICCAE59995.2024.10569706](https://doi.org/10.1109/ICCAE59995.2024.10569706)
 - **Distance-IoU Loss**: Zheng et al., *"Distance-IoU Loss: Faster and Better Learning for Bounding Box Regression"*, AAAI 2020. [arXiv:1911.08287](https://arxiv.org/abs/1911.08287)
 - **Kaggle Challenge**: [Ultrasound Nerve Segmentation Dataset](https://www.kaggle.com/c/ultrasound-nerve-segmentation)
 - **VGG16 Backbone**: Simonyan & Zisserman, *"Very Deep Convolutional Networks for Large-Scale Image Recognition"*, ICLR 2015.
