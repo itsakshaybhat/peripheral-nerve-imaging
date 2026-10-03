@@ -1,9 +1,5 @@
 """Peripheral nerve imaging pipeline.
 
-This file is a cleaned, readable version of the notebook code found in
-`Nerve image code.docx`. It keeps the original custom loss names and model
-components, but organizes them into a script-friendly layout.
-
 Expected local layout:
 
 - `data/ultrasound-nerve-segmentation/train/` for images and masks

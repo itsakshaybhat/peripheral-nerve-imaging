@@ -1,10 +1,3 @@
-"""Literal notebook-style export of the nerve imaging project.
-
-This file keeps the code in the same rough order as the docx source so the
-project is easy to browse on GitHub and easy to compare with the original
-notebook-style implementation.
-"""
-
 from __future__ import annotations
 
 import os
